@@ -13,7 +13,7 @@ The data comes from the AviationStack API and covers real flight operations incl
 ![PowerBI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-## What I built
+## 🛠️ What I built
  - An automated ETL pipeline in Python
  - A Bronze → Silver → Gold data architecture in PostgreSQL
  - A star schema with dimension and fact tables
@@ -37,7 +37,7 @@ The data comes from the AviationStack API and covers real flight operations incl
 
 The layered approach makes the pipeline easy to debug, maintain, and extend as the project grows.
 
-## Tech Stack
+## 🧰 Tech Stack
 
 | Tool | Purpose |
 |-------|-------------------|
@@ -47,7 +47,7 @@ The layered approach makes the pipeline easy to debug, maintain, and extend as t
 | Power BI | Dashboard and visualizations |
 | DAX  | Calculated measures |
 
-## ETL Pipeline
+## 🔄 ETL Pipeline
 
 **1. Bronze — Raw Ingestion (`fetch_flights.py`)**
 
@@ -66,7 +66,7 @@ Builds the final model:
 - `dim_time` — time dimension generated dynamically
 - `fact_flight` — one row per flight with all foreign keys
 
-## Power BI Dashboard
+## 📈 Power BI Dashboard
 
 **Page 1: Flight Operations Overview**
 
@@ -82,7 +82,7 @@ Deeper exploration with scatter plots, delay trends, and route-level filtering.
 
 Screenshots are in the `/screenshots` folder.
 
-## KPI Views
+## 📌 KPI Views
 
 The dashboard is powered by reusable SQL views:
 
@@ -95,7 +95,7 @@ The dashboard is powered by reusable SQL views:
 
 These views make it easy to update the dashboard or plug the data into other tools later.
 
-## Folder Structure
+## 📁 Folder Structure
 ```
 flight-ops-project/
 │
@@ -124,7 +124,7 @@ flight-ops-project/
 └── README.md
 ```
 
-## How to Run
+## ▶️ How to Run
 
 **1. Create a `.env` file with your credentials:**
 
@@ -148,13 +148,13 @@ python src/silver_to_gold.py
 
 Load `Flight_Dashboard.pbix` and click Refresh.
 
-## Limitations
+## ⚠️ Limitations
 
 - Data covers one day due to the API free tier
 - Real-time refresh needs an active API key
 - Some route data derived from IATA codes
 
-## What I learned
+## 🎯 What I learned
 
 This project taught me how much work happens before the dashboard. The pipeline, the schema design, the cleaning logic — that's where most of the real engineering is. The dashboard is the last 20%.
 
