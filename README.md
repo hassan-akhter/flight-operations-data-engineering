@@ -26,7 +26,7 @@ The data comes from the AviationStack API and covers real flight operations incl
 - 16,273 flights processed
 - 1 day of real-time API data
 
-## Architecture
+## 🧱 Architecture
 | Layer | What happens here |
 |-------|-------------------|
 | AviationStack API | Source of raw flight data (JSON responses) |
